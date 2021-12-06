@@ -5,11 +5,11 @@
 
  <p>Add new Servers or blueprint</p>
 <label>Server name</label>
-<input type="text" class="form-control" >
-<!-- <input type="text" class="form-control" [(ngModel)="newServerName"]> -->
+
+<input type="text" class="form-control" [(ngModel)]="newServerName">
 <label>Server content</label>
-<input type="text" class="form-control">
-<!-- <input type="text" class="form-control" [(ngModel)="newServerContent"]> -->
+
+<input type="text" class="form-control" [(ngModel)]="newServerContent"> 
 
 
 <br/> 
@@ -18,7 +18,7 @@ class="btn btn-primary"
 (click)="onAddServer()">
 Add Server
 </button>
-
+&nbsp; &nbsp;
 <button
     class="btn btn-primary"
     (click)="onAddBlueprint()">
@@ -30,3 +30,4 @@ Add Server
 
 
 </div>
+

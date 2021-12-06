@@ -16,7 +16,13 @@
 
 <div class="container">
 
-<app-cockpit></app-cockpit>
+ <!-- serverCreated i blueprintCreated kreirano je u cockpit TS ima dekorater @Output()  -->
+<app-cockpit 
+
+(serverCreated)="onServerAdded($event)"
+(blueprintCreated)="onBlueprintAdded($event)"
+
+></app-cockpit>
 
 <hr>
 
@@ -25,7 +31,7 @@
 <div class="col-xs-12">
 
 <app-server-element *ngFor="let serverElement of serverElements"
-[abcde]="serverElement"
+[abcd]="serverElement"
 ></app-server-element>
 
 </div>
